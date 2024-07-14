@@ -1,0 +1,27 @@
+{{if .Pjax}}
+	{{template "header.html" .}}
+	<meta property="og:description" content="Learn where to contact the Riiverse team if you have any questions, or in the case of an emergency.">
+{{else}}
+	<title>{{.Title}} - Riiverse</title>
+{{end}}
+<div id="main-body" class="profile-top">
+    {{template "general_sidebar.html" .}}
+    <div class="main-column" id="help">
+		<div class="post-list-outline">
+			<h2 class="label">Contact the Team</h2>
+			<div id="guide" class="help-content">
+				<p>If you need to contact the site's development team for any reason, you can find out how to do so here. Please note that if you have a question, you should first consult the <a href="/help/faq">FAQ page. Former developers are listed as well, for they should be credited as well, despite moving on to other projects.</a></p>
+				<h2>Zynth</h2>
+				<p>Developer and owner.</p>
+				<p>User page: <a href="/users/admin">Zynth</a></p>
+				<h2>Herb</h2>
+				<p>Mental help :3</h2>
+				<p>User page: <a href="/users/Herb">Herb</a></p>
+				
+			</div>
+		</div>
+    </div>
+</div>
+{{if .Pjax}}
+    {{template "footer.html"}}
+{{end}}
